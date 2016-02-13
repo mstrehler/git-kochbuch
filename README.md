@@ -4,7 +4,7 @@ Kochbuch für typische Situationen mit [Git](https://git-scm.com/).
 
 ## Dinge neu machen
 
-### Neues Repo (GitHub -> Lokal)
+### Neues Repo von GitHub zum eigenen Rechner
 
 1. Auf [GitHub](https://github.com/) ein neues Repo **mit** einem README erstellen.
 2. Die **HTTPS-Adresse des Repo** in die Zwischenablage kopieren.
@@ -12,7 +12,7 @@ Kochbuch für typische Situationen mit [Git](https://git-scm.com/).
 4. Mit `git clone https://github.com/user/foo.git` das Repo von GitHub 'runterladen und installieren.
 5. Es befindet sich nun im Verzeichns foobar das Verzeichnis foo.
 
-### Neues Repo (Lokal -> GitHub)
+### Neues Repo vom eigenen Rechner nach GitHub
 
 1. Im lokalen Ordner mit `git init` ein Repo initialisieren.
 2. Mit `git add foo.tex bar.tex` die Dateien anfügen.
@@ -26,14 +26,15 @@ Kochbuch für typische Situationen mit [Git](https://git-scm.com/).
 ### Ein neuer Branch ausgehend von zurückliegendem Commit erzeugen
 
 Man ist fleissig am Codieren und merkt plötzlich, dass man hier eigentlich auf einem neuen Branch sein sollte.
-Man will einen neuen Branch erzeugen, ausgehend vom (zurückliegenden) Commit a1b2c3d
+Man will einen neuen Branch erzeugen, ausgehend vom (zurückliegenden) Commit `a1b2c3d`
 
 ```bash
 git branch foobar
 git reset --hard a1b2c3d
 git checkout foobar
 ```
-Alternativ können z.B. 3 Commits zurückgesprungen werden
+
+Alternativ kann mit `HEAD~n` n Commits zurückgesprungen werden. So wird hier 3 Commits zurückgesprungen:
 
 ```bash
 git branch foobar
@@ -79,3 +80,4 @@ Jetzt hat man die gewünschte Version im Arbeitsverzeichnis und es kann angefüg
 git add somefile.pdf
 git commit –m “My commit message for the merge”
 ```
+
