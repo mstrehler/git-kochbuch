@@ -25,8 +25,9 @@ Kochbuch für typische Situationen mit [Git](https://git-scm.com/).
 
 ### Ein neuer Branch ausgehend von zurückliegendem Commit erzeugen
 
-Man ist fleissig am Codieren und merkt plötzlich, dass man hier eigentlich auf einem neuen Branch sein sollte.
-Man will einen neuen Branch erzeugen, ausgehend vom (zurückliegenden) Commit `a1b2c3d`
+Man ist fleissig am Codieren und merkt plötzlich, dass man hier eigentlich
+Man auf einem neuen Branch sein sollte. will einen neuen Branch erzeugen,
+Man ausgehend vom (zurückliegenden) Commit `a1b2c3d`
 
 ```bash
 git branch foobar
@@ -34,7 +35,8 @@ git reset --hard a1b2c3d
 git checkout foobar
 ```
 
-Alternativ kann mit `HEAD~n` n Commits zurückgesprungen werden. So wird hier 3 Commits zurückgesprungen:
+Alternativ kann mit `HEAD~n` n Commits zurückgesprungen werden. So wird hier
+3 Commits zurückgesprungen:
 
 ```bash
 git branch foobar
@@ -51,6 +53,8 @@ Mit `git remote -v` aktueller Name der eingestellten URL für fetch u. push anze
 ```bash
 git remote set-url origin https://github.com/username/reponame.git
 ```
+Wenn der Username geändert hat, wird man nach `git push` noch nach dem
+(neuen) Username sowie dem Passwort gefragt.
 
 ### Branch umbenennen
 
