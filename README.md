@@ -44,6 +44,14 @@ git checkout foobar
 
 ## Dinge umbenennen
 
+### Remote Repo umbenennen
+
+Mit `git remote -v` aktueller Name der eingestellten URL für fetch u. push anzeigen.
+
+```bash
+git remote set-url origin https://github.com/username/reponame.git
+```
+
 ### Branch umbenennen
 
 ```bash
