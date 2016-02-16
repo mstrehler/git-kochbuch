@@ -67,6 +67,15 @@ oder (wenn man schon im umzubenennenden Branch ist)
 ```bash
 git branch -m newfoo
 ```
+## Dinge löschen
+
+### Remote Branch löschen
+
+```bash
+git push origin :bugfix
+```
+Den seltsamen Syntax kann man sich merken, indem man sich den Befehl `[localbranch]:[remotebranch]` vorstellt --
+einfach ohne den lokalen Teil.
 
 ## Konflikte bei merge lösen
 
