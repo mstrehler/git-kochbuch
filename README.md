@@ -1,27 +1,11 @@
 # Git-Kochbuch
 
-[stash](stash.md)
-
 Kochbuch für typische Situationen mit [Git](https://git-scm.com/).
 
 ## Dinge neu machen
 
-### Neues Repo von GitHub zum eigenen Rechner
-
-1. Auf [GitHub](https://github.com/) ein neues Repo **mit** einem README erstellen.
-2. Die **HTTPS-Adresse des Repo** in die Zwischenablage kopieren.
-3. Auf dem lokalen Rechner mit `cd ~/Documents/foobar/` in das Verzeichnis wechseln, in dem das Repo erstellt werden soll.
-4. Mit `git clone https://github.com/user/foo.git` das Repo von GitHub 'runterladen und installieren.
-5. Es befindet sich nun im Verzeichns foobar das Verzeichnis foo.
-
-### Neues Repo vom eigenen Rechner nach GitHub
-
-1. Im lokalen Ordner mit `git init` ein Repo initialisieren.
-2. Mit `git add foo.tex bar.tex` die Dateien anfügen.
-3. `git commit -m "erstes Commit"` erstes Commit erzeugen.
-4. Auf [GitHub](https://github.com/) ein neues Repo **ohne** einem README erstellen.
-5. `git remote add origin https://github.com/mstrehler/vimref.git`
-6. `git push -u origin master`
+* [Neues Repo von GitHub zum Rechner](neues-repo-github-lokal.md)
+* [Neues Repo vom Rechner nach GitHub](neues-repo-lokal-github.md)  
 
 ## Branching
 
@@ -137,31 +121,6 @@ Jetzt hat man die gewünschte Version im Arbeitsverzeichnis und es kann angefüg
 git add somefile.pdf
 git commit –m “My commit message for the merge”
 ```
+## Diverses
 
-## Stashing (Zwischenspeichern eines unfertigen Commits)
-
-stash: englisch für Geheimversteck, Lager.
-
-Um eine angefangene Arbeit, die noch nicht commit-würdig ist, zu speichern dient folgender Befehl:
-
-```bash
-git stash
-```
-So kann dann auch ohne Commit in einen anderen Branch gewechselt werden.
-
-Gibt eine Liste mit den gespeicherten Stashs aus:
-
-```bash
-git stash list
-```
-
-(Wieder-)einsetzen (to apply) des letzen Stash, resp. mit Wiederherstellen des Stage-Zustandes (--index),
-resp. Wiederherstellen eines bestimmten Stash
-
-```bash
-git stash apply
-git stash apply --index
-git stash apply stash@{2}
-```
-
-
+* [Stash](stash.md)
