@@ -1,5 +1,7 @@
 # Git-Kochbuch
 
+[stash](stash.md)
+
 Kochbuch für typische Situationen mit [Git](https://git-scm.com/).
 
 ## Dinge neu machen
