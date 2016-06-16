@@ -1,5 +1,0 @@
-# Stash
-
-blabla
-blabla
-blabla
